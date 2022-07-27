@@ -1,0 +1,17 @@
+.row{
+    padding: 20px;
+    margin-top: 7px;
+}
+
+div{
+    background-color: #284335;
+}
+
+p{
+    color:#fdedc9;
+}
+
+h1, h3{
+    display: inline;
+   color: #d69b69;
+}

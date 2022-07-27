@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+#logoAp{
+    display: block;
+    width: 250px;
+    float:left;
+}
+
+.logoRedes{
+    margin-right: 0.5em;
+}
+
+.logoRedes img{
+    margin: 0.2em;
+}
+
+#Redes{
+width:50px;
+}
+
+.btn{
+    border-width: medium;
+}
