@@ -1,7 +1,6 @@
 .row{
     padding: 20px;
-    margin-top: 7px;
-    background-color: #FFd0A6;
+    background-color: #050407;
 }
 
 .contenedor{
@@ -17,5 +16,5 @@
     box-shadow: 10px 10px 15px #284335;
 }
 h1{
-    color:#d69b69;
+    color:#fdedc9;
 }

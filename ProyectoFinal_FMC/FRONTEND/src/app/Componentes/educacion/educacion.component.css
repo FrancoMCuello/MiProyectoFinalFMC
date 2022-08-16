@@ -1,17 +1,17 @@
 .row{
     padding: 20px;
-    margin-top: 7px;
 }
 
 div{
-    background-color: #284335;
+    font-family: 'Poppins';
+    background-color: #000000;
 }
 
 p{
-    color:#fdedc9;
+    color:#474747;
 }
 
-h1, h3{
+h1, h2, h3{
     display: inline;
-   color: #d69b69;
+   color: #fdedc9;
 }

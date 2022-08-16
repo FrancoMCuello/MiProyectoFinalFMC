@@ -5,15 +5,16 @@
     </div>
 
     <div class="logoRedes">
-      <a href=""><img src="../../../assets/img/facebook.png" id="Redes" /></a>
+      <a href="https://www.facebook.com/FrancoV.A.P/"><img src="../../../assets/img/facebook.png" id="Redes" /></a>
 
-      <a href=""><img src="../../../assets/img/instagram.png" id="Redes" /> </a>
+      <a href="https://www.instagram.com/franco.m.cuello/"><img src="../../../assets/img/instagram.png" id="Redes" /> </a>
 
       <a href=""><img src="../../../assets/img/linkedin.png" id="Redes" /> </a>
 
       <a href=""><img src="../../../assets/img/github.png" id="Redes" /> </a>
 
-      <button type="button" class="btn btn-outline-light">INGRESO</button>
+      <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+      <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
 
     </div>
     

@@ -2,19 +2,18 @@
     padding: 20px;
 }
 div{
-    background-color: #d69b69;
-    text-align: center;
-    font-family: Tahoma, Geneva, sans-serif;
-    color: #fdedc9;
-    
+    background-color: #050407;
+    text-align: center;   
 }
 
 /* Etiqueta Nombre*/
 
 #nombre{
-    font-family: Tahoma, Geneva, sans-serif;
+    font-family:'Poppins';
     font-weight: bold;
-    margin-top: 30%;
+    font-size: 200%;
+    display: inline;
+    margin-top: 10%;
 }
 
 /*Etiqueta foto de Perfil*/
@@ -24,9 +23,9 @@ div{
     position: absolute;
     width: 15%;
     left: 1%;
-    top: 625px;
+    top: 790px;
   border-radius: 100%;
-  box-shadow: 3px 3px 3px #fdedc9;
+  box-shadow: 3px 3px 15px #7A698F;
 }
 }
 
@@ -40,4 +39,15 @@ div{
         top:35%;
     }
     
+}
+
+p, h1{
+   font-family: 'Poppins';
+}
+
+h1{
+    color:#fdedc9;
+}
+p{
+    color:#474747;
 }
