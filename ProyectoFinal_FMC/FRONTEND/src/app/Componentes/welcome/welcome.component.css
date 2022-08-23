@@ -1,0 +1,8 @@
+
+
+@media (max-width: 576px){
+    .row{
+        height: 100%;
+        overflow-y: hidden;
+    }
+    }

@@ -18,26 +18,39 @@ div{
 
 /*Etiqueta foto de Perfil*/
 
-@media (min-width: 576px) {
+@media (min-width: 530px) {
 #fotoperfil{
     position: absolute;
     width: 15%;
     left: 1%;
-    top: 790px;
+    top: 125%;
   border-radius: 100%;
   box-shadow: 3px 3px 15px #7A698F;
 }
 }
 
+@media (max-width: 730px) {
+    #fotoperfil{
+        position: absolute;
+        width: 15%;
+        left: 1%;
+        top: 71%;
+       border-radius: 100%;
+       box-shadow: 3px 3px 15px #5a5a5a;
+    }
+    }
+
 
 @media (max-width: 576px){
     #fotoperfil{
-        position:absolute;
-        width: 30%;
+        position:relative;
+        width: 50%;
         border-radius: 100%;
-        left:3%;
-        top:35%;
+        align-content: center;
+        top: 0%;
     }
+
+
     
 }
 
@@ -46,7 +59,7 @@ p, h1{
 }
 
 h1{
-    color:#fdedc9;
+    color:#ffffff;
 }
 p{
     color:#474747;

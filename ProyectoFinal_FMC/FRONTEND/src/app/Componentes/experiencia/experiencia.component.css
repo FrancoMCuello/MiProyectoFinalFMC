@@ -7,11 +7,11 @@ div{
     background-color: #000000;
 }
 
-p{
+h4{
     color:#474747;
 }
 
-h1, h2, h3{
+h1, h3{
     display: inline;
-   color: #fdedc9;
+   color: #ffffff;
 }

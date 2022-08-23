@@ -1,32 +1,53 @@
 <div class="row">
-    <h1>Formacion</h1>
-  
-    <div class="col-lg-2">
-      <button type="button" class="btn btn-outline-success" routerLink="/nuevaedu" *ngIf="isLogged">
-           Agregar Educacion
-      </button>
-    </div>
-  
-    <div class="col-lg-1"></div>
-    <div class="col-lg-11">
-      <table class="table">
-        <tbody>
-          <tr *ngFor="let Educacion of educacion">
-            <td><h3>{{Educacion.nombreE}}</h3></td>
-            <td><h4>{{Educacion.descripcionE}}</h4></td>
+  <h1>Formacion</h1>
+
+  <div class="col-lg-2">
+    <button
+      type="button"
+      class="btn btn-outline-light"
+      routerLink="/nuevaedu"
+      *ngIf="isLogged"
+    >
+      Agregar Educacion
+    </button>
+  </div>
+
+  <div class="col-lg-1"></div>
+  <div class="col-lg-11">
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let Educacion of educacion">
+          <div class="col-sx-12">
+            <td>
+              <h3>{{ Educacion.nombreE }}</h3>
+            </td>
+          </div>
+          <div class="col-xs-12">
+            <td>
+              <h4>{{ Educacion.descripcionE }}</h4>
+            </td>
+          </div>
+          <div class="col-xs-12">
             <td *ngIf="isLogged">
-              <button class="btn btn-outline-secondary" routerLink="/editedu/{{Educacion.id}}">
+              <button
+                class="btn btn-outline-secondary"
+                routerLink="/editedu/{{ Educacion.id }}"
+              >
                 EDITAR <i class="bi bi-pen"></i>
               </button>
             </td>
-              
+
             <td *ngIf="isLogged">
-              <button class="btn btn-outline-danger" (click)="delete(Educacion.id)">
+              <button
+                class="btn btn-outline-danger"
+                (click)="delete(Educacion.id)"
+              >
                 BORRAR <i class="bi bi-trash"></i>
-              </button></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+              </button>
+            </td>
+          </div>
+        </tr>
+      </tbody>
+    </table>
   </div>
-  
+</div>
