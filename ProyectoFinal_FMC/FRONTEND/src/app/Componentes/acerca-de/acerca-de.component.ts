@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { persona } from 'src/app/model/Persona.model';
+import { Persona } from 'src/app/model/Persona.model';
 import { PersonaService } from 'src/app/service/persona.service';
 
 @Component({
@@ -9,13 +9,13 @@ import { PersonaService } from 'src/app/service/persona.service';
 })
 export class AcercaDeComponent implements OnInit {
 
-  persona: persona = new persona("", "", "");
+  persona: Persona  = new Persona("", "", "", "");
 
   constructor(public personaService: PersonaService) { }
 
   ngOnInit(): void {
-
-    this.personaService.getPersona().subscribe(data => {this.persona = data})
+    
+    this.personaService.detail(1).subscribe(data => {this.persona = data})
 
   }
 
