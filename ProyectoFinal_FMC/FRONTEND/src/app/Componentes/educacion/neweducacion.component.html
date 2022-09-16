@@ -1,49 +1,65 @@
+<section class="vh-120 gradient-custom">
+  <div class="container py-7 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white" style="border-radius: 1rem">
+          <div class="card-body p-5 text-center">
+            <div class="mb-md-5 mt-md-4 pb-5">
+              <h2 class="fw-bold mb-2 text-uppercase">Agregar Educacion</h2>
+              <p class="text-white-50 mb-5">Por favor, complete los campos</p>
 
-    <section class="vh-100 gradient-custom">
-      <div class="container py-7 h-100">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-            <div class="card bg-dark text-white" style="border-radius: 1rem">
-              <div class="card-body p-5 text-center">
-                <div class="mb-md-5 mt-md-4 pb-5">
-                  <h2 class="fw-bold mb-2 text-uppercase">Agregar Educacion</h2>
-                  <p class="text-white-50 mb-5">
-                    Por favor, complete los campos
-                  </p>
-
-                  <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
-                    <div class="form-group">
-                      <label for="nombreE">Nombre de la institucion</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="nombreE"
-                        name="nombreE"
-                        [(ngModel)]="nombreE"
-                        required
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="descripcionE"
-                        >Descripcion de sus estudios</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="descripcionE"
-                        name="descripcionE"
-                        [(ngModel)]="descripcionE"
-                        required
-                      />
-                    </div>
-                    <button class="btn btn-outline-light">
-                      Agregar Formacion
-                    </button>
-                  </form>
+              <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                  <label for="nombreE">Nombre de la institucion</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombreE"
+                    name="nombreE"
+                    [(ngModel)]="nombreE"
+                    required
+                  />
                 </div>
-              </div>
+                <div class="form-group">
+                  <label for="descripcionE">Descripcion de sus estudios</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="descripcionE"
+                    name="descripcionE"
+                    [(ngModel)]="descripcionE"
+                    required
+                  />
+
+                  <div class="form-group">
+                    <label for="fechaIE">Fecha de Inicio</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="fechaIE"
+                      name="fechaIE"
+                      [(ngModel)]="fechaIE"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="fechaFE">Fecha de finalizacion</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="fechaFE"
+                      name="fechaFE"
+                      [(ngModel)]="fechaFE"
+                      required
+                    />
+                  </div>
+                </div>
+                <button class="btn btn-outline-light">Agregar Formacion</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
