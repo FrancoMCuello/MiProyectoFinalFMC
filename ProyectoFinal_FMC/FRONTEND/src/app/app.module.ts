@@ -25,7 +25,7 @@ import { NeweducacionComponent } from './Componentes/educacion/neweducacion.comp
 import { EditeducacionComponent } from './Componentes/educacion/editeducacion.component';
 import { EditpersonaComponent } from './Componentes/acerca-de/editpersona.component';
 
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -56,7 +56,8 @@ import { EditpersonaComponent } from './Componentes/acerca-de/editpersona.compon
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
 
   providers: [

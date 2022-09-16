@@ -7,11 +7,27 @@ div{
     background-color: #000000;
 }
 
-p{
+h4{
     color:#474747;
 }
 
 h1, h2, h3{
     display: inline;
    color: #ffffff;
+}
+
+.contenedorEd{
+    margin: 0%;
+    padding: 0%;
+    background: rgb(26,26,29);
+    background: linear-gradient(99deg, rgba(26,26,29,1) 0%, rgba(71,71,71,1) 55%, rgba(122,105,143,1) 99%);
+}
+
+.contenidoEd{
+    margin: 1px;
+    padding: 0px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    border-color: #FFFFFF;
 }
