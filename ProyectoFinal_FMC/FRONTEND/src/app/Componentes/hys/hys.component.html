@@ -1,59 +1,60 @@
-<div class="text-center row">
+<div class="row">
+  <div class="text-center row">
     <h1>Hard and Soft Skills</h1>
     <div class="offset-lg-5 col-lg-2">
-        <button
-          type="button"
-          class="btn btn-outline-light"
-          routerLink="/nuevaskill"
-          *ngIf="isLogged"
-        >
-          Nueva Experiencia
-        </button>
-      </div>
+      <button
+        type="button"
+        class="btn btn-outline-light"
+        routerLink="/nuevaskill"
+        *ngIf="isLogged"
+      >
+        Nueva Experiencia
+      </button>
+    </div>
   </div>
 
-<div class="text-center col-sm-4 col-md-4 col-lg-4" *ngFor="let skill of skill">
-<div data-aos="flip-left" data-aos-easing="ease-out-cubic"
-data-aos-duration="2000">
-    <circle-progress 
-        [percent]="(skill.porcentaje)" 
+  <div
+    class="text-center col-sm-4 col-md-4 col-lg-4"
+    *ngFor="let skill of skill"
+  >
+    <div
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1500"
+    >
+      <circle-progress
+        [percent]="skill.porcentaje"
         [space]="-10"
-        [radius]="100" 
+        [radius]="100"
         [showUnits]="false"
-        [title]="(skill.nombre)"
+        [title]="skill.nombre"
         [titleFontSize]="'3em'"
         [showSubtitle]="false"
-        [outerStrokeWidth]="10" 
+        [outerStrokeWidth]="10"
         [innerStrokeWidth]="10"
         [outerStrokeGradient]="true"
         [outerStrokeColor]="'#786E88'"
-        [outerStrokeGradientStopColor]="'#c5b7cd'"  
-        [innerStrokeColor]="'#474747'" 
-        [animation]="true" 
-        [animationDuration]="600">
-    </circle-progress>
+        [outerStrokeGradientStopColor]="'#c5b7cd'"
+        [innerStrokeColor]="'#474747'"
+        [animation]="true"
+        [animationDuration]="600"
+      >
+      </circle-progress>
 
-    
-    <div *ngIf="isLogged">
+      <div *ngIf="isLogged">
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
           <button
             class="btn btn-outline-secondary me-md-2"
-            routerLink="/edithys/{{ skill.id }}"
+            routerLink="/editskill/{{ skill.id }}"
           >
             <i class="bi bi-pen"></i>
           </button>
 
-          <button
-            class="btn btn-outline-danger"
-            (click)="delete(skill.id)"
-          >
+          <button class="btn btn-outline-danger" (click)="delete(skill.id)">
             <i class="bi bi-trash"></i>
           </button>
         </div>
+      </div>
     </div>
+  </div>
 </div>
-</div>
-
-
-
-
