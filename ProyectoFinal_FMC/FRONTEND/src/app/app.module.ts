@@ -26,6 +26,8 @@ import { EditeducacionComponent } from './Componentes/educacion/editeducacion.co
 import { EditpersonaComponent } from './Componentes/acerca-de/editpersona.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EditSkillComponent } from './Componentes/hys/edit-skill.component';
+import { NewSkillComponent } from './Componentes/hys/new-skill.component';
 
 
 
@@ -49,6 +51,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NeweducacionComponent,
     EditeducacionComponent,
     EditpersonaComponent,
+    EditSkillComponent,
+    NewSkillComponent,
 
   ],
   imports: [
