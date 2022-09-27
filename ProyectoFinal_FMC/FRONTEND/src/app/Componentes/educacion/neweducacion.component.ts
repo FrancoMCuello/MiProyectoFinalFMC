@@ -11,9 +11,8 @@ import { SEducacionService } from 'src/app/service/s-educacion.service';
 export class NeweducacionComponent implements OnInit {
   nombreE: string ='';
   descripcionE: string ='';
-  fechaIE: String = '';
-  fechaFE: String = '';
-
+  fechaFE: string ='';
+  fechaIE: string ='';
 
 
   constructor(private sEducacion: SEducacionService, private router: Router) {}
@@ -22,7 +21,7 @@ export class NeweducacionComponent implements OnInit {
   }
 
   onCreate(): void{
-    const educacion = new Educacion(this.nombreE, this.descripcionE, this.fechaIE,this.fechaFE);
+    const educacion = new Educacion(this.nombreE, this.descripcionE, this.fechaFE, this.fechaIE);
     this.sEducacion.save(educacion).subscribe(
       data=>{ 
         alert("Eduacion añadida correctamente");

@@ -25,10 +25,7 @@ import { NeweducacionComponent } from './Componentes/educacion/neweducacion.comp
 import { EditeducacionComponent } from './Componentes/educacion/editeducacion.component';
 import { EditpersonaComponent } from './Componentes/acerca-de/editpersona.component';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { EditSkillComponent } from './Componentes/hys/edit-skill.component';
-import { NewSkillComponent } from './Componentes/hys/new-skill.component';
-// import { EditAcercaDComponent } from './Componentes/acerca-de/edit-acerca-d.component';
+
 
 
 
@@ -52,8 +49,6 @@ import { NewSkillComponent } from './Componentes/hys/new-skill.component';
     NeweducacionComponent,
     EditeducacionComponent,
     EditpersonaComponent,
-    EditSkillComponent,
-    NewSkillComponent
 
   ],
   imports: [
@@ -61,8 +56,7 @@ import { NewSkillComponent } from './Componentes/hys/new-skill.component';
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
-    FormsModule,
-    BrowserAnimationsModule
+    FormsModule
   ],
 
   providers: [
