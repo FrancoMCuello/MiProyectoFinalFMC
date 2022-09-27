@@ -26,6 +26,7 @@ import { EditeducacionComponent } from './Componentes/educacion/editeducacion.co
 import { EditpersonaComponent } from './Componentes/acerca-de/editpersona.component';
 import { EdithysComponent } from './Componentes/hys/edithys.component';
 import { NewHysComponent } from './Componentes/hys/newhys.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -60,7 +61,8 @@ import { NewHysComponent } from './Componentes/hys/newhys.component';
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
 
   providers: [
