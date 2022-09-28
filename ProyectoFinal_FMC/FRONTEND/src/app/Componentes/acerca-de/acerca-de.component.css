@@ -27,6 +27,11 @@ div{
   border-radius: 100%;
   box-shadow: 3px 3px 15px #7A698F;
 }
+#acercademi{
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 0px 0px 0px 2px;
+}
 }
 
 @media (max-width: 730px) {
@@ -65,8 +70,3 @@ h5{
     color:#474747;
 }
 
-#acercademi{
-    border-style: solid;
-    border-color: #ffffff;
-    border-width: 0px 0px 0px 2px;
-}
