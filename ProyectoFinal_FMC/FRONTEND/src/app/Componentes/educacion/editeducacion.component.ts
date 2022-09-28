@@ -33,7 +33,7 @@ export class EditeducacionComponent implements OnInit {
       alert("Se ha modificado la eduacion correctamente")
       this.router.navigate(['home']);
     }, err => {
-      alert("Error al modificar la educacion");
+      alert("Error al modificar la educacion, compruebe ser el administrador");
       this.router.navigate(['home']);
     }
     )

@@ -40,7 +40,7 @@ educacion: Educacion[] = [];
       this.sEducacion.delete(id).subscribe(
         data => {this.cargarEducacion()}
     , err => {
-      alert("Error, no se pudo eliminar");
+      alert("Error, no se pudo eliminar. Compruebe ser el administrador");
        }
       )
      }

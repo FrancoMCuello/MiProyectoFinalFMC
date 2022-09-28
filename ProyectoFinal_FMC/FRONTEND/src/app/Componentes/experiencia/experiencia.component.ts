@@ -37,7 +37,7 @@ export class ExperienciaComponent implements OnInit {
     if(id != undefined){
       this.sExperiencia.delete(id).subscribe(data => {
         this.cargarExperiencia();
-    }, err => { alert("No se pudo eliminar la Experiencia"); 
+    }, err => { alert("No se pudo eliminar la Experiencia, compruebe ser el administrador"); 
            }
           )
         }

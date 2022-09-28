@@ -18,7 +18,7 @@ export class EdithysComponent implements OnInit {
     this.skillS.detail(id).subscribe(
       data => {this.skill = data;},
       err => {alert ("Error al modificar");
-      this.router.navigate(['']);
+      this.router.navigate(['home']);
     }
     )
   }
@@ -29,7 +29,7 @@ export class EdithysComponent implements OnInit {
       data=> {this.router.navigate(['']);}
       , err => {
         alert("Error al modificar Skill, compruebe ser el administrador");
-        this.router.navigate(['']);}
+        this.router.navigate(['home']);}
     )
   }
 

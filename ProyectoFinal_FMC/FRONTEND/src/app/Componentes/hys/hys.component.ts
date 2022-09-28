@@ -34,7 +34,7 @@ export class HysComponent implements OnInit {
     if(id != undefined){
       this.skillS.delete(id).subscribe(
         data => {this.cargarSkills();}
-      , err => {alert("Error al eleminar la Skill");}
+      , err => {alert("Error al eleminar la Skill, compruebe ser el administrador");}
     )
   }
 }

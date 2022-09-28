@@ -30,7 +30,7 @@ export class EditExperienciaComponent implements OnInit {
     const id = this.activatedRouter.snapshot.params['id'];
     this.sExperiencia.update(id, this.expLab).subscribe(data => {
       this.router.navigate(['home']);
-    }, err => { alert("Error al modificar Experiencia");
+    }, err => { alert("Error al modificar Experiencia, compruebe ser el administrador");
                 this.router.navigate(['home']);
               }
            )

@@ -25,6 +25,7 @@ export class LogosComponent implements OnInit {
   onLogOut(): void {
     this.tokenService.logOut();
     this.router.navigate(['/welcome'])
+    this.isLogged= false;
   }
 
   login(){

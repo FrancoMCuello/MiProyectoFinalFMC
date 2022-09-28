@@ -9,15 +9,15 @@
 
   <div class="offset-xs-2 col-xs-8 col-sm-2 col-md-2 col-lg-2">
     <h1 id="nombre">{{ persona.nombre }} {{ persona.apellido }}</h1>
-    <p> {{persona.profesion}} </p>
+    <h5> {{persona.profesion}} </h5>
   </div>
 
-  <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+  <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" id="acercademi">
     <span>
       <h1>Acerca de mi</h1>
-      <p>
+      <h5>
         {{persona.descripcion}}
-      </p>
+      </h5>
       <div *ngIf="isLogged">
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
           <button
