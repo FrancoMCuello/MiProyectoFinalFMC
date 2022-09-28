@@ -27,6 +27,7 @@ import { EditpersonaComponent } from './Componentes/acerca-de/editpersona.compon
 import { EdithysComponent } from './Componentes/hys/edithys.component';
 import { NewHysComponent } from './Componentes/hys/newhys.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EditdescripComponent } from './Componentes/acerca-de/editdescrip.component';
 
 
 
@@ -54,6 +55,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     EditpersonaComponent,
     EdithysComponent,
     NewHysComponent,
+    EditdescripComponent,
 
   ],
   imports: [

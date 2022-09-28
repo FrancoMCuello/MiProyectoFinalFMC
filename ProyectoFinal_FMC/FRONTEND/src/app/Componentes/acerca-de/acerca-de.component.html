@@ -16,9 +16,18 @@
     <span>
       <h1>Acerca de mi</h1>
       <p>
-        Me gusta mucho... tengo como motivacion tal cosa, y mi deseo es otra
-        cosa
+        {{persona.descripcion}}
       </p>
+      <div *ngIf="isLogged">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button
+            class="btn btn-outline-secondary me-md-2"
+            routerLink="/editdescrip/{{ persona.id }}"
+          >
+            <i class="bi bi-pen"></i>
+          </button>
+          </div>
+          </div>
     </span>
   </div>
   <div class="col-sx-12 col-sm-2 col-md-2 col-lg-2">
