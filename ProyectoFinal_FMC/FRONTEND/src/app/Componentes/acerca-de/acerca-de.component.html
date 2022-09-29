@@ -10,6 +10,12 @@
   <div class="offset-xs-2 col-xs-8 col-sm-2 col-md-2 col-lg-2">
     <h1 id="nombre">{{ persona.nombre }} {{ persona.apellido }}</h1>
     <h5> {{persona.profesion}} </h5>
+    <button
+    class="btn btn-outline-secondary"
+    routerLink="/editper/{{ persona.id }}"
+  >
+    Editar Perfil <i class="bi bi-pen"></i>
+  </button>
   </div>
 
   <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" id="acercademi">
@@ -31,11 +37,5 @@
     </span>
   </div>
   <div class="col-sx-12 col-sm-2 col-md-2 col-lg-2">
-    <button
-      class="btn btn-outline-secondary"
-      routerLink="/editper/{{ persona.id }}"
-    >
-      EDITAR PERFIL <i class="bi bi-pen"></i>
-    </button>
   </div>
 </div>

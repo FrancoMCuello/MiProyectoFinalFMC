@@ -6,6 +6,7 @@
 
 .contenedor{
     width: auto;
+    padding: 5px;
 }
 
 .parte1, .parte2{
@@ -16,7 +17,7 @@
 .img-proyecto{
     box-shadow: 10px 10px 15px #7A698F;
 }
-h1{
+h1, h2{
     color:#ffffff;
 }
 

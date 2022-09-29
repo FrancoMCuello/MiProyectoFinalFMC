@@ -26,7 +26,8 @@ export class EdithysComponent implements OnInit {
   onUpdate(){
     const id = this.activatedRouter.snapshot.params['id'];
     this.skillS.update(id, this.skill).subscribe(
-      data=> {this.router.navigate(['']);}
+      data=> {this.router.navigate(['home']);
+              alert("Skill modificado correctamente")}
       , err => {
         alert("Error al modificar Skill, compruebe ser el administrador");
         this.router.navigate(['home']);}
